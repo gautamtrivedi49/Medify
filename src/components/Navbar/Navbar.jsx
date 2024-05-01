@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../../assets/logo.png';
+import hero from '../../assets/hero.png';
 const Navbar = () => {
   return (
     <div>
@@ -18,6 +19,18 @@ const Navbar = () => {
           </ul>
           <button className='hidden md:block bg-blue-500 rounded text-white h-[40px] w-[130px] border border-white hover:bg-blue-700'>My Bookings</button>
         </nav>
+        <div className='grid sm:grid-cols-12 grid-cols-1 m-[20px]'>
+        <div className='sm:col-span-7 sm:ml-[135px] text-left'>
+    <h5 className='text-2xl font-semibold font-Poppins my-2 mt-[100px]'>Skip the travel! Find Online</h5>
+    <span className='font-bold text-4xl'>Medical</span> <span className='font-bold text-4xl text-[#2AA7FF]'>Centers</span>
+    <p className='my-4'>Connect instantly with a 24x7 specialist or choose to <br/>video visit a particular doctor.</p>
+    <button className='md:block bg-blue-500 rounded text-white h-[40px] w-[130px] border border-white hover:bg-blue-700'>Find Centers</button>
+</div>
+
+          <div className='sm:col-span-5'>
+            <img className='w-[643px] h-[735.94px]' src={hero} />
+          </div>
+        </div>
       </div>
     </div>
   );
