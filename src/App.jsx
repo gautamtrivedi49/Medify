@@ -1,12 +1,12 @@
 import React from 'react'
 import Navbar from './components/Navbar/Navbar'
-import Hero from './components/Navbar/Hero'
+import SearchBox from './components/Navbar/SearchBox'
 
 const App = () => {
   return (
     <>
     <Navbar />
-    <Hero />
+    <SearchBox />
     </>
     
   )

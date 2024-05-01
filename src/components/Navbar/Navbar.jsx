@@ -28,9 +28,10 @@ const Navbar = () => {
 </div>
 
           <div className='sm:col-span-5'>
-            <img className='w-[643px] h-[735.94px]' src={hero} />
+            <img className='w-[643px] h-[735.94px] relative ml-10' src={hero} />
           </div>
         </div>
+    
       </div>
     </div>
   );
