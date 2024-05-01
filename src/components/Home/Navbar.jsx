@@ -1,6 +1,8 @@
+"use client";
 import React from 'react';
 import logo from '../../assets/logo.png';
 import hero from '../../assets/hero.png';
+import { TypeAnimation } from 'react-type-animation';
 const Navbar = () => {
   return (
     <div>
@@ -22,7 +24,21 @@ const Navbar = () => {
         <div className='grid sm:grid-cols-12 grid-cols-1 m-[20px]'>
         <div className='sm:col-span-7 sm:ml-[135px] text-left'>
     <h5 className='text-2xl font-semibold font-Poppins my-2 mt-[100px]'>Skip the travel! Find Online</h5>
-    <span className='font-bold text-4xl'>Medical</span> <span className='font-bold text-4xl text-[#2AA7FF]'>Centers</span>
+    <span className='font-bold text-4xl'>Medical</span> <span className='font-bold text-4xl text-[#2AA7FF]'>
+    <TypeAnimation
+      sequence={[
+        // Same substring at the start will only be typed out once, initially
+        'Centers',
+        1000, // wait 1s before replacing "Mice" with "Hamsters"
+        'Hospitals',
+        1000,
+        
+      ]}
+      wrapper="span"
+      speed={40}
+      repeat={Infinity}
+    />
+    </span>
     <p className='my-4'>Connect instantly with a 24x7 specialist or choose to <br/>video visit a particular doctor.</p>
     <button className='md:block bg-blue-500 rounded text-white h-[40px] w-[130px] border border-white hover:bg-blue-700'>Find Centers</button>
 </div>

@@ -6,10 +6,11 @@ import Capsule from '../../assets/Capsule.svg';
 import Drugstore from '../../assets/Drugstore.svg';
 
 
+
 const SearchBox = () => {
   return (
     <div className="flex justify-center">
-  <div className='bg-white h-[400px] relative shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]  rounded-lg border border-white flex m-[-270px] flex-col sm:w-[1350px]  '>
+  <div className='bg-white h-[400px] relative shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px] mb-8  rounded-lg border border-white flex m-[-270px] flex-col sm:w-[1350px]  '>
     <div>
     <form class='flex justify-between space-x-11 m-10'>
     <div class="relative flex items-center">
