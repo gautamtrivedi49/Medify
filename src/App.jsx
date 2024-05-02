@@ -4,7 +4,8 @@ import SearchBox from './components/Home/SearchBox'
 import Card from './components/Home/Card'
 import Team from './components/Home/Team'
 import Specialisation from './components/Home/Specialisation'
-
+import Patient from './components/Home/Patient'
+import Family from './components/Home/Family'
 const App = () => {
   return (
     <>
@@ -13,6 +14,8 @@ const App = () => {
     <Card />
     <Specialisation />
     <Team />
+    <Patient />
+    <Family />
     </>
     
   )

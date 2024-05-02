@@ -24,7 +24,7 @@ const Team = () => {
     };
 
     return (
-        <div>
+        <div className='mb-11'>
         <h1 className='text-center text-4xl mb-4 font-semibold text-[#1B3C74] '>Our Medical Specialist</h1>
         <Slider {...settings} className='mt-2'>
             
